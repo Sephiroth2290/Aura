@@ -27,7 +27,6 @@ namespace Aura
         {
             InitializeComponent();
             string appPath = System.IO.Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().CodeBase);
-            DASettings.Source = new Uri(appPath + @"\Settings.xml");
         }
 
 
@@ -83,8 +82,7 @@ namespace Aura
 
         private void settingsSave_Click(object sender, RoutedEventArgs e)
         {
-            string source = DASettings.Source.LocalPath;
-            DASettings.Document.Save(source);
+            Settings.Save();
             Close();
         }
 
