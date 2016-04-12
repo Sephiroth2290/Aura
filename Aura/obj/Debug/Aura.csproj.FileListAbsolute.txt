@@ -1,0 +1,54 @@
+C:\Users\Kenneth\Documents\Visual Studio 2015\Projects\Aura\Aura\bin\Debug\Aura.exe.config
+C:\Users\Kenneth\Documents\Visual Studio 2015\Projects\Aura\Aura\obj\Debug\Aura.csprojResolveAssemblyReference.cache
+C:\Users\Kenneth\Documents\Visual Studio 2015\Projects\Aura\Aura\obj\Debug\MainWindow.g.cs
+C:\Users\Kenneth\Documents\Visual Studio 2015\Projects\Aura\Aura\obj\Debug\App.g.cs
+C:\Users\Kenneth\Documents\Visual Studio 2015\Projects\Aura\Aura\obj\Debug\Aura_MarkupCompile.cache
+C:\Users\Kenneth\Documents\Visual Studio 2015\Projects\Aura\Aura\obj\Debug\Aura_MarkupCompile.lref
+C:\Users\Kenneth\Documents\Visual Studio 2015\Projects\Aura\Aura\bin\Debug\Aura.exe
+C:\Users\Kenneth\Documents\Visual Studio 2015\Projects\Aura\Aura\bin\Debug\Aura.pdb
+C:\Users\Kenneth\Documents\Visual Studio 2015\Projects\Aura\Aura\obj\Debug\MainWindow.baml
+C:\Users\Kenneth\Documents\Visual Studio 2015\Projects\Aura\Aura\obj\Debug\Aura.g.resources
+C:\Users\Kenneth\Documents\Visual Studio 2015\Projects\Aura\Aura\obj\Debug\Aura.Properties.Resources.resources
+C:\Users\Kenneth\Documents\Visual Studio 2015\Projects\Aura\Aura\obj\Debug\Aura.csproj.GenerateResource.Cache
+C:\Users\Kenneth\Documents\Visual Studio 2015\Projects\Aura\Aura\obj\Debug\Aura.exe
+C:\Users\Kenneth\Documents\Visual Studio 2015\Projects\Aura\Aura\obj\Debug\Aura.pdb
+C:\Users\Kenneth\Documents\Visual Studio 2015\Projects\Aura\Aura\obj\Debug\WindowSettings.g.cs
+C:\Users\Kenneth\Documents\Visual Studio 2015\Projects\Aura\Aura\obj\Debug\WindowSettings.baml
+C:\Users\Kenneth\Documents\Visual Studio 2015\Projects\Aura\Aura\obj\Debug\App.baml
+C:\Users\Kenneth\Documents\Visual Studio 2015\Projects\Aura\Aura\bin\Debug\Microsoft.WindowsAPICodePack.dll
+C:\Users\Kenneth\Documents\Visual Studio 2015\Projects\Aura\Aura\bin\Debug\Microsoft.WindowsAPICodePack.ExtendedLinguisticServices.dll
+C:\Users\Kenneth\Documents\Visual Studio 2015\Projects\Aura\Aura\bin\Debug\Microsoft.WindowsAPICodePack.Sensors.dll
+C:\Users\Kenneth\Documents\Visual Studio 2015\Projects\Aura\Aura\bin\Debug\Microsoft.WindowsAPICodePack.Shell.dll
+C:\Users\Kenneth\Documents\Visual Studio 2015\Projects\Aura\Aura\bin\Debug\Microsoft.WindowsAPICodePack.ShellExtensions.dll
+C:\Users\Kenneth\Documents\Visual Studio 2015\Projects\Aura\Aura\bin\Debug\Microsoft.WindowsAPICodePack.xml
+C:\Users\Kenneth\Documents\Visual Studio 2015\Projects\Aura\Aura\bin\Debug\Microsoft.WindowsAPICodePack.ExtendedLinguisticServices.xml
+C:\Users\Kenneth\Documents\Visual Studio 2015\Projects\Aura\Aura\bin\Debug\Microsoft.WindowsAPICodePack.Sensors.xml
+C:\Users\Kenneth\Documents\Visual Studio 2015\Projects\Aura\Aura\bin\Debug\Microsoft.WindowsAPICodePack.Shell.xml
+C:\Users\Kenneth\Documents\Visual Studio 2015\Projects\Aura\Aura\bin\Debug\Microsoft.WindowsAPICodePack.ShellExtensions.xml
+C:\Users\Public\Games\Aura\Aura\bin\Debug\Aura.exe.config
+C:\Users\Public\Games\Aura\Aura\obj\Debug\Aura.exe
+C:\Users\Public\Games\Aura\Aura\obj\Debug\Aura.pdb
+C:\Users\Public\Games\Aura\Aura\bin\Debug\Aura.exe
+C:\Users\Public\Games\Aura\Aura\bin\Debug\Aura.pdb
+C:\Users\Public\Games\Aura\Aura\bin\Debug\Microsoft.WindowsAPICodePack.dll
+C:\Users\Public\Games\Aura\Aura\bin\Debug\Microsoft.WindowsAPICodePack.ExtendedLinguisticServices.dll
+C:\Users\Public\Games\Aura\Aura\bin\Debug\Microsoft.WindowsAPICodePack.Sensors.dll
+C:\Users\Public\Games\Aura\Aura\bin\Debug\Microsoft.WindowsAPICodePack.Shell.dll
+C:\Users\Public\Games\Aura\Aura\bin\Debug\Microsoft.WindowsAPICodePack.ShellExtensions.dll
+C:\Users\Public\Games\Aura\Aura\bin\Debug\Microsoft.WindowsAPICodePack.xml
+C:\Users\Public\Games\Aura\Aura\bin\Debug\Microsoft.WindowsAPICodePack.ExtendedLinguisticServices.xml
+C:\Users\Public\Games\Aura\Aura\bin\Debug\Microsoft.WindowsAPICodePack.Sensors.xml
+C:\Users\Public\Games\Aura\Aura\bin\Debug\Microsoft.WindowsAPICodePack.Shell.xml
+C:\Users\Public\Games\Aura\Aura\bin\Debug\Microsoft.WindowsAPICodePack.ShellExtensions.xml
+C:\Users\Public\Games\Aura\Aura\obj\Debug\Aura.csprojResolveAssemblyReference.cache
+C:\Users\Public\Games\Aura\Aura\obj\Debug\App.g.cs
+C:\Users\Public\Games\Aura\Aura\obj\Debug\MainWindow.g.cs
+C:\Users\Public\Games\Aura\Aura\obj\Debug\WindowSettings.g.cs
+C:\Users\Public\Games\Aura\Aura\obj\Debug\Aura_MarkupCompile.cache
+C:\Users\Public\Games\Aura\Aura\obj\Debug\Aura_MarkupCompile.lref
+C:\Users\Public\Games\Aura\Aura\obj\Debug\App.baml
+C:\Users\Public\Games\Aura\Aura\obj\Debug\MainWindow.baml
+C:\Users\Public\Games\Aura\Aura\obj\Debug\WindowSettings.baml
+C:\Users\Public\Games\Aura\Aura\obj\Debug\Aura.g.resources
+C:\Users\Public\Games\Aura\Aura\obj\Debug\Aura.Properties.Resources.resources
+C:\Users\Public\Games\Aura\Aura\obj\Debug\Aura.csproj.GenerateResource.Cache

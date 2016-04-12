@@ -1,0 +1,9 @@
+Button Color #FF050725
+
+Button Text Color #FF5248BD
+
+Font NSimSun
+
+
+
+        <Button x:Name="btnLaunch" Content="Launch DA" Margin="0,-24.95,-4,0" VerticalAlignment="Top" Height="20" Background="#FF050725" FontFamily="NSimSun" FontWeight="Bold" FontSize="14" Foreground="#FF5248BD" BorderThickness="1" BorderBrush="#FF020000" Width="75" d:IsLocked="False"/>
