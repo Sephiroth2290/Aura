@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:Aura"
         mc:Ignorable="d"
         FontFamily="NSimSun"
-        Title="Settings" Height="200" Width="400" Background="#FF020630" AllowsTransparency="True" WindowStyle="None" BorderBrush="Black" BorderThickness="1" MouseLeftButtonDown="settings_MouseDown">
+        Title="Settings" Height="200" Width="400" Background="#FF020630" AllowsTransparency="True" WindowStyle="None" BorderBrush="Black" BorderThickness="1" MouseLeftButtonDown="settings_MouseDown" WindowStartupLocation="CenterScreen">
 
     <Window.DataContext>
         <local:SettingsViewModel />
@@ -14,10 +14,10 @@
     <Grid Margin="0,10,0,0">
 
 
-        <TextBox x:Name="DAPath" HorizontalAlignment="Left" Height="20" TextWrapping="Wrap" Text="{Binding DarkAgesPath}" Foreground="#FF5248BD" VerticalAlignment="Top" Width="350" Background="#FF050725" FontFamily="NSimSun" FontWeight="Bold" Margin="30,30,0,0"/>
+        <TextBox x:Name="DAPath" HorizontalAlignment="Left" Height="20" TextWrapping="Wrap" Text="{Binding DAPathContent}" Foreground="#FF5248BD" VerticalAlignment="Top" Width="350" Background="#FF050725" FontFamily="NSimSun" FontWeight="Bold" Margin="30,30,0,0"/>
         <TextBlock x:Name="Darkages_Path" HorizontalAlignment="Left" Margin="30,10,0,0" TextWrapping="Wrap" Text="Dark Ages Path" VerticalAlignment="Top" Foreground="#FF5248BD" FontWeight="Bold"/>
         <Button x:Name="btnBrowse" Content="Browse" Foreground="#FF5248BD" HorizontalAlignment="Left" Margin="305,55,0,115" Width="75" Background="#FF050725" FontFamily="NSimSun" FontWeight="Bold" Click="btnBrowse_Click"/>
-        <TextBox x:Name="DAFolder" HorizontalAlignment="Left" Height="20" TextWrapping="Wrap" Text="{Binding DataPath}" Foreground="#FF5248BD" Background="#FF050725" VerticalAlignment="Top" Width="350" FontWeight="Bold" Margin="30,90,0,0"/>
+        <TextBox x:Name="DAFolder" HorizontalAlignment="Left" Height="20" TextWrapping="Wrap" Text="{Binding DAFolderContent}" Foreground="#FF5248BD" Background="#FF050725" VerticalAlignment="Top" Width="350" FontWeight="Bold" Margin="30,90,0,0"/>
         <TextBlock x:Name="DarkagesFolder" HorizontalAlignment="Left" Margin="30,71,0,0" TextWrapping="Wrap" Text="Dark Ages Folder" VerticalAlignment="Top" Width="113" Foreground="#FF5248BD" FontWeight="Bold"/>
         <Button x:Name="btnBrowse_Directory" Content="Browse" Foreground="#FF5248BD" Background="#FF050725" HorizontalAlignment="Left" Margin="305,0,0,55" VerticalAlignment="Bottom" Width="75" FontWeight="Bold" Click="btnBrowse_Directory_Click"/>
         <Button x:Name="settingsCancel" IsCancel="True" Content="Cancel" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Foreground="#FF5248BD" Background="#FF050725" FontWeight="Bold" Click="settingsCancel_Click" Margin="305,160,0,0"/>

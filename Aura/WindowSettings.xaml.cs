@@ -57,6 +57,7 @@ namespace Aura
                 // Open document 
                 string filename = dlg.FileName;
                 DAPath.Text = filename;
+                Settings.DarkAgesPath = DAPath.Text;
             }
         }
 
@@ -77,6 +78,7 @@ namespace Aura
             // get all the directories in selected directory
             var dirs = openFolder.FileNames.ToArray();
             DAFolder.Text = openFolder.FileName;
+            Settings.DataPath = DAFolder.Text;
 
         }
 

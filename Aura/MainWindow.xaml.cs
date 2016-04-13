@@ -99,6 +99,8 @@ namespace Aura
         public MainWindow()
         {
             InitializeComponent();
+            Settings.Load();
+            Settings.Save();
         }
         private void Window_MouseDown(object sender, MouseButtonEventArgs e)
         {
@@ -120,7 +122,7 @@ namespace Aura
                     Size = Marshal.SizeOf(structure)
                 };
                 ProcessInformation processInfo;
-                Kernel32.CreateProcess(Settings.DarkAgesPath, (string)null, IntPtr.Zero, IntPtr.Zero, false, ProcessCreationFlags.Suspended, IntPtr.Zero, (string)null, ref startupInfo, out processInfo);
+                Kernel32.CreateProcess(Settings.DarkAgesPath, null, IntPtr.Zero, IntPtr.Zero, false, ProcessCreationFlags.Suspended, IntPtr.Zero, null, ref startupInfo, out processInfo);
 
                 //get process id from pinfo
                 //Process processById = Process.GetProcessById(processInfo.ProcessId);
@@ -147,17 +149,17 @@ namespace Aura
 
                     //change direct ip to 127.0.0.1
                     processMemoryStream.Position = 0x004333C2;
-                    processMemoryStream.WriteByte((byte)106);
-                    processMemoryStream.WriteByte((byte)1);
-                    processMemoryStream.WriteByte((byte)106);
-                    processMemoryStream.WriteByte((byte)0);
-                    processMemoryStream.WriteByte((byte)106);
-                    processMemoryStream.WriteByte((byte)0);
-                    processMemoryStream.WriteByte((byte)106);
-                    processMemoryStream.WriteByte((byte)127);
+                    processMemoryStream.WriteByte(106);
+                    processMemoryStream.WriteByte(1);
+                    processMemoryStream.WriteByte(106);
+                    processMemoryStream.WriteByte(0);
+                    processMemoryStream.WriteByte(106);
+                    processMemoryStream.WriteByte(0);
+                    processMemoryStream.WriteByte(106);
+                    processMemoryStream.WriteByte(127);
 
                     processMemoryStream.Position = 0x0057A7D9;  //Multiple Instance
-                    processMemoryStream.WriteByte((byte)235);
+                    processMemoryStream.WriteByte(235);
 
                     //resume suspended process
                     Kernel32.ResumeThread(processInfo.ThreadHandle);
@@ -168,7 +170,6 @@ namespace Aura
         private void btnSettings_Click(object sender, RoutedEventArgs e)
         {
 
-            //WindowSettings settingsWindow = new WindowSettings();
             if (settingsWindow == null)
             {
                 settingsWindow = new WindowSettings();

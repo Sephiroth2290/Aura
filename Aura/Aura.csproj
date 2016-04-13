@@ -99,6 +99,15 @@
     <Compile Include="ProcessInformation.cs" />
     <Compile Include="ProcessMemoryStream.cs" />
     <Compile Include="Program.cs" />
+    <Compile Include="Server\ClientPacket.cs" />
+    <Compile Include="Server\CRC32.cs" />
+    <Compile Include="Server\Crypto.cs" />
+    <Compile Include="Server\EncryptMethod.cs" />
+    <Compile Include="Server\KruCRC.cs" />
+    <Compile Include="Server\Packet.cs" />
+    <Compile Include="Server\ServerOpCode.cs" />
+    <Compile Include="Server\ServerPacket.cs" />
+    <Compile Include="Server\Utility.cs" />
     <Compile Include="Settings.cs" />
     <Compile Include="Settings1.cs" />
     <Compile Include="SettingsViewModel.cs" />
