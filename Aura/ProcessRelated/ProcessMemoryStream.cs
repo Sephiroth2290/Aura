@@ -3,7 +3,7 @@ using System.IO;
 using System.Runtime.InteropServices;
 using System.Text;
 
-namespace Aura
+namespace Aura.ProcessRelated
 {
     public class ProcessMemoryStream : Stream, IDisposable
     {

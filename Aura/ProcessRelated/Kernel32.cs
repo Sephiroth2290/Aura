@@ -1,8 +1,9 @@
 ﻿using System;
 using System.Diagnostics;
 using System.Runtime.InteropServices;
+using Aura.Server;
 
-namespace Aura
+namespace Aura.ProcessRelated
 {
     internal static class Kernel32
     {

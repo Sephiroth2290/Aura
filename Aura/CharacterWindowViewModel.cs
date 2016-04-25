@@ -6,10 +6,7 @@ using System.Threading.Tasks;
 
 namespace Aura
 {
-    internal enum WaitEventResult
+    class CharacterWindowViewModel
     {
-        Signaled = 0,
-        Abandoned = 128,
-        Timeout = 258,
     }
 }

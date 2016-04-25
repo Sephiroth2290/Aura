@@ -6,16 +6,16 @@
         xmlns:local="clr-namespace:Aura"
         mc:Ignorable="d"
         Title="Aura" Height="350" Width="525" Background="#FF020630" AllowsTransparency="True" WindowStyle="None" MouseLeftButtonDown="Window_MouseDown" BorderBrush="Black" BorderThickness="1">
-    <Grid HorizontalAlignment="Left" Height="25" Margin="25,25,0,0" VerticalAlignment="Top" Width="100">
-        <Button x:Name="btnLaunch" Content="Launch DA" Margin="0,0,0,0" VerticalAlignment="Top" Height="20" Background="#FF050725" FontFamily="NSimSun" FontWeight="Bold" FontSize="14" Foreground="#FF5248BD" BorderThickness="1" BorderBrush="#FF020000" Width="75" d:IsLocked="False"/>
-        <Grid HorizontalAlignment="Left" Height="25" Margin="0,50,0,-50" VerticalAlignment="Top" Width="100">
-            <Button x:Name="btnSettings" Content="Settings" Margin="0,0,0,0" VerticalAlignment="Top" Height="20" Background="#FF050725" FontFamily="NSimSun" FontWeight="Bold" FontSize="14" Foreground="#FF5248BD" BorderThickness="1" BorderBrush="#FF020000" Width="75" d:IsLocked="False" Click="btnSettings_Click"/>
-        </Grid>
-        <Grid HorizontalAlignment="Left" Height="25" Margin="0,100,0,-100" VerticalAlignment="Top" Width="100">
-            <Button x:Name="btnAbout" Content="About" Margin="0,0,0,0" VerticalAlignment="Top" Height="20" Background="#FF050725" FontFamily="NSimSun" FontWeight="Bold" FontSize="14" Foreground="#FF5248BD" BorderThickness="1" BorderBrush="#FF020000" Width="75" d:IsLocked="False" Click="btnAbout_Click"/>
-        </Grid>
-        <Grid HorizontalAlignment="Left" Height="25" Margin="0,150,0,-150" VerticalAlignment="Top" Width="100">
-            <Button x:Name="btnExit" Content="Exit" Margin="0,0,0,0" VerticalAlignment="Top" Height="20" Background="#FF050725" FontFamily="NSimSun" FontWeight="Bold" FontSize="14" Foreground="#FF5248BD" BorderThickness="1" BorderBrush="#FF020000" Width="75" d:IsLocked="False" Click="btnExit_Click"/>
-        </Grid>
+    <Grid Margin="0,0,0,0">
+        <Button x:Name="btnLaunch" Content="Launch DA" Margin="30,30,418,0" VerticalAlignment="Top" Height="20" Background="#FF050725" FontFamily="NSimSun" FontWeight="Bold" FontSize="14" Foreground="#FF5248BD" BorderThickness="1" BorderBrush="#FF020000" Width="75" d:IsLocked="False"/>
+
+        <Button x:Name="btnSettings" Content="Settings" Margin="30,90,418,0" VerticalAlignment="Top" Height="20" Background="#FF050725" FontFamily="NSimSun" FontWeight="Bold" FontSize="14" Foreground="#FF5248BD" BorderThickness="1" BorderBrush="#FF020000" Width="75" d:IsLocked="False" Click="btnSettings_Click"/>
+
+
+        <Button x:Name="btnAbout" Content="About" Margin="30,150,418,0" VerticalAlignment="Top" Height="20" Background="#FF050725" FontFamily="NSimSun" FontWeight="Bold" FontSize="14" Foreground="#FF5248BD" BorderThickness="1" BorderBrush="#FF020000" Width="75" d:IsLocked="False" Click="btnAbout_Click"/>
+
+
+        <Button x:Name="btnExit" Content="Exit" Margin="30,210,418,0" VerticalAlignment="Top" Height="20" Background="#FF050725" FontFamily="NSimSun" FontWeight="Bold" FontSize="14" Foreground="#FF5248BD" BorderThickness="1" BorderBrush="#FF020000" Width="75" d:IsLocked="False" Click="btnExit_Click"/>
     </Grid>
+
 </Window>

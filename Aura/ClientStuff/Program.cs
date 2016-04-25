@@ -3,17 +3,40 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.IO;
+using System.Net;
+using System.Net.Sockets;
 using System.Threading.Tasks;
+using System.Threading;
+using Aura;
+using Aura.Entity;
 
-namespace Aura
+namespace Aura.ClientStuff
 {
     public class Program
     {
         #region Variables
 
+        public static object SyncObj = new object();
+        public static List<int> _processIds = new List<int>();
+        public static string regged = string.Empty;
+        public static readonly Version Version = new Version(1, 0, 1, 3);
+        public static List<string> friendlist = null;
+        public const long ADDRESS_IP = 4407738L;
+        public const long ADDRESS_MI = 5830325L;
+        public const long ADDRESS_PORT = 4407780L;
+        public const int PORT = 2610;
+
         public static string StartupPath { get; private set; }
         public static Dictionary<string, SpellData> SpellList { get; set; }
         public static Dictionary<string, bool> HasWalls { get; set; }
+        public static Dictionary<string, Client> Alts { get; set; }
+        public static List<Client> Clients { get; private set; }
+        public static CharacterWindow clienttab { get; set; }
+        public static MainWindow MainForm { get; private set; }
+        public static IPEndPoint Redirect { get; set; }
+        public static Socket Socket { get; private set; }
+        public static string users { get; private set; }
+        public static Dictionary<uint, Character> StaticCharacters { get; set; }
 
         #endregion
 
@@ -657,6 +680,41 @@ namespace Aura
             string expr_31 = string.Join("\\", value);
             Directory.CreateDirectory(Path.GetDirectoryName(expr_31));
             return expr_31;
+        }
+        private static void EndAccept(IAsyncResult ar)
+        {
+            //List<Client> clients = Clients;
+            //bool lockTaken = false;
+            //try
+            //{
+            //    Monitor.Enter(clients, ref lockTaken);
+            //    Clients.Add(new Client(Socket.EndAccept(ar), Redirect ?? new IPEndPoint(IPAddress.Parse("52.88.55.94"), 2610)));
+            //    Redirect = null;
+            //    Socket.BeginAccept(new AsyncCallback(EndAccept), null);
+            //}
+            //finally
+            //{
+            //    if (lockTaken)
+            //        Monitor.Exit(clients);
+            //}
+        }
+
+        private static bool Initialize()
+        {
+            Clients = new List<Client>();
+            Alts = new Dictionary<string, Client>();
+            try
+            {
+                Socket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
+                Socket.Bind(new IPEndPoint(IPAddress.Loopback, 2610));
+                Socket.Listen(10);
+            }
+            catch (SocketException)
+            {
+                return false;
+            }
+            Socket.BeginAccept(new AsyncCallback(EndAccept), null);
+            return true;
         }
     }
 }

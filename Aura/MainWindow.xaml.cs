@@ -1,5 +1,10 @@
 ﻿using System;
 using Aura;
+using Aura.ClientStuff;
+using Aura.Entity;
+using Aura.MapRelated;
+using Aura.ProcessRelated;
+using Aura.Server;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -190,7 +195,7 @@ namespace Aura
 
         private void btnExit_Click(object sender, RoutedEventArgs e)
         {
-            Process.GetCurrentProcess().Kill();  //Closes the bot.
+            Process.GetCurrentProcess().Kill();  //Closes the bot, duh.
         }
     }
 }

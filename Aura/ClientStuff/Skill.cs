@@ -4,14 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Aura
+namespace Aura.ClientStuff
 {
-    public class Spell
+    public class Skill
     {
-        public string[] Captions { get; set; }
-
-        public int CastLines { get; set; }
-
         public static Dictionary<string, double> Cooldowns { get; set; }
 
         public int CurrentLevel { get; set; }
@@ -24,15 +20,12 @@ namespace Aura
 
         public DateTime NextUse { get; set; }
 
-        public string Prompt { get; set; }
+        public string Caption { get; set; }
 
-        public int SpellSlot { get; set; }
+        public int SkillSlot { get; set; }
 
-        public int Type { get; set; }
-
-        public Spell()
+        public Skill()
         {
-            this.Captions = new string[10];
             this.NextUse = DateTime.UtcNow;
         }
 

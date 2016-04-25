@@ -75,6 +75,7 @@
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.Composition" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Runtime.Remoting" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -87,18 +88,62 @@
     <Reference Include="WindowsBase" />
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
+    <Reference Include="zlib.net, Version=1.0.3.0, Culture=neutral, PublicKeyToken=47d7877cb3620160">
+      <HintPath>..\packages\zlib.net.1.0.4.0\lib\zlib.net.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Page Include="App.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Compile Include="Kernel32.cs" />
-    <Compile Include="ProcessAccess.cs" />
-    <Compile Include="ProcessCreationFlags.cs" />
-    <Compile Include="ProcessInformation.cs" />
-    <Compile Include="ProcessMemoryStream.cs" />
-    <Compile Include="Program.cs" />
+    <Compile Include="CharacterWindow.xaml.cs">
+      <DependentUpon>CharacterWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CharacterWindowViewModel.cs" />
+    <Compile Include="ClientStuff\Status.cs" />
+    <Compile Include="ClientStuff\Staves.cs" />
+    <Compile Include="Entity\AsgallCondition.cs" />
+    <Compile Include="Entity\Character.cs" />
+    <Compile Include="ClientStuff\Client.cs" />
+    <Compile Include="ClientStuff\Dialog.cs" />
+    <Compile Include="Entity\DeireasFaileasCondition.cs" />
+    <Compile Include="Entity\DionCondition.cs" />
+    <Compile Include="Entity\Legend.cs" />
+    <Compile Include="Entity\LegendMark.cs" />
+    <Compile Include="Entity\Nation.cs" />
+    <Compile Include="Entity\Npc.cs" />
+    <Compile Include="Entity\Player.cs" />
+    <Compile Include="Entity\Post.cs" />
+    <Compile Include="Entity\SelfProfile.cs" />
+    <Compile Include="Entity\Statistics.cs" />
+    <Compile Include="Entity\UserlistItem.cs" />
+    <Compile Include="MapRelated\Direction.cs" />
+    <Compile Include="ClientStuff\Item.cs" />
+    <Compile Include="ProcessRelated\Kernel32.cs" />
+    <Compile Include="MapRelated\Location.cs" />
+    <Compile Include="MapRelated\Map.cs" />
+    <Compile Include="MapRelated\PathFinder.cs" />
+    <Compile Include="MapRelated\Point.cs" />
+    <Compile Include="MapRelated\Tile.cs" />
+    <Compile Include="MapRelated\Town.cs" />
+    <Compile Include="ProcessRelated\MemoryReader.cs" />
+    <Compile Include="ProcessRelated\Metafile.cs" />
+    <Compile Include="ProcessRelated\MetafileNode.cs" />
+    <Compile Include="ProcessRelated\MyMemoryReadSearch.cs" />
+    <Compile Include="ProcessRelated\ProcessAccess.cs" />
+    <Compile Include="ProcessRelated\ProcessCreationFlags.cs" />
+    <Compile Include="ProcessRelated\ProcessInformation.cs" />
+    <Compile Include="ProcessRelated\ProcessMemoryStream.cs" />
+    <Compile Include="ClientStuff\Program.cs" />
+    <Compile Include="ProcessRelated\SafeNativeMethods.cs" />
+    <Compile Include="ProcessRelated\SafeProcessHandle.cs" />
+    <Compile Include="ProcessRelated\TypeOfMessage.cs" />
+    <Compile Include="ProcessRelated\User32.cs" />
+    <Compile Include="ProcessRelated\Utility.cs" />
+    <Compile Include="ProcessRelated\ZLIB.cs" />
+    <Compile Include="Server\ClientOpcode.cs" />
     <Compile Include="Server\ClientPacket.cs" />
     <Compile Include="Server\CRC32.cs" />
     <Compile Include="Server\Crypto.cs" />
@@ -108,17 +153,20 @@
     <Compile Include="Server\ServerOpCode.cs" />
     <Compile Include="Server\ServerPacket.cs" />
     <Compile Include="Server\Utility.cs" />
+    <Compile Include="Server\WaitEventResult.cs" />
     <Compile Include="Settings.cs" />
-    <Compile Include="Settings1.cs" />
     <Compile Include="SettingsViewModel.cs" />
-    <Compile Include="Skill.cs" />
-    <Compile Include="Spell.cs" />
-    <Compile Include="SpellData.cs" />
-    <Compile Include="StartupInfo.cs" />
-    <Compile Include="WaitEventResult.cs" />
+    <Compile Include="ClientStuff\Skill.cs" />
+    <Compile Include="ClientStuff\Spell.cs" />
+    <Compile Include="ClientStuff\SpellData.cs" />
+    <Compile Include="ProcessRelated\StartupInfo.cs" />
     <Compile Include="WindowSettings.xaml.cs">
       <DependentUpon>WindowSettings.xaml</DependentUpon>
     </Compile>
+    <Page Include="CharacterWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>

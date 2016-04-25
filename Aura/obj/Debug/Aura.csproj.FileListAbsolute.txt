@@ -53,3 +53,6 @@ C:\Users\Public\Games\Aura\Aura\obj\Debug\Aura.g.resources
 C:\Users\Public\Games\Aura\Aura\obj\Debug\Aura.Properties.Resources.resources
 C:\Users\Public\Games\Aura\Aura\obj\Debug\Aura.csproj.GenerateResource.Cache
 C:\Users\Kenneth\Documents\Visual Studio 2015\Projects\Aura\Aura\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Kenneth\Documents\Visual Studio 2015\Projects\Aura\Aura\obj\Debug\CharacterWindow.g.cs
+C:\Users\Kenneth\Documents\Visual Studio 2015\Projects\Aura\Aura\bin\Debug\zlib.net.dll
+C:\Users\Kenneth\Documents\Visual Studio 2015\Projects\Aura\Aura\obj\Debug\CharacterWindow.baml

@@ -1,0 +1,18 @@
+﻿<Window x:Class="Aura.CharacterWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Aura"
+        mc:Ignorable="d"
+        Title="CharacterWindow" FontFamily="NSimSun" Height="600" Width="1000" Background="#FF020630" AllowsTransparency="True" WindowStyle="None" MouseLeftButtonDown="Window_MouseDown" BorderBrush="Black" BorderThickness="1">
+
+    <!--<Window.DataContext>
+        <local:CharacterWindowViewModel />
+    </Window.DataContext>-->
+    <Grid>
+        <Frame x:Name="CharacterInfo" Content="" Height="250" Width="200" Margin="788,10,10,0" VerticalAlignment="Top"  BorderBrush="Black" BorderThickness="1" FontSize="14"/>
+        <TextBlock x:Name="CharacterName" Margin="858,10,40,0" TextWrapping="NoWrap" TextAlignment="Center" Text="{Binding CharacterName}" VerticalAlignment="Top" Height="20" Foreground="#FF5248BD" FontWeight="Bold"/>
+
+    </Grid>
+</Window>

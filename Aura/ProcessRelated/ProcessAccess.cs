@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Aura
+namespace Aura.ProcessRelated
 {
     [Flags]
     public enum ProcessAccess
